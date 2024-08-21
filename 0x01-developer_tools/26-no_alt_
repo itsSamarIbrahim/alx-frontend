@@ -1,0 +1,3 @@
+const no_alt = [...document.querySelectorAll('img:not([alt])')];
+no_alt.forEach(img => console.log(img.className));
+>>> img-fluid missing-alt
