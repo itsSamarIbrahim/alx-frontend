@@ -1,0 +1,13 @@
+const links = [...document.querySelectorAll('a[target="_blank"]')];
+links.forEach(link => {
+    if (!link.hasAttribute('rel')) {
+        console.log(link);
+    }
+});
+<!-- <a class="btn btn-xl btn-outline-light" href="https://www.holbertonschool.com" target="_blank">
+          <i class="fas fa-download mr-2"></i>
+          Download me!
+        </a>
+        
+        Typically, the recommended rel attributes for links that open in a new tab are noopener and noreferrer.
+        If links are missing rel="noopener" and rel="noreferrer", the correct answer would be C. A and B.-->
