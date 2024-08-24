@@ -44,7 +44,6 @@ body {
 a:link {
     color: var(--text-color);
     text-decoration: none;
-    font-style: normal; /* Ensure font style is normal initially */
 }
 
 a:visited {
