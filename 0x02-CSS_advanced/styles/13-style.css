@@ -36,10 +36,10 @@ body {
     line-height: var(--line-height-base);
 }
 
-a {
+a:link {
     color: var(--text-color);
     text-decoration: none;
-    font-style: normal; /* Ensure font style is normal initially */
+    /* font-style: normal; Ensure font style is normal initially */
 }
 
 a:visited {
