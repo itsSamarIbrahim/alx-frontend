@@ -216,6 +216,6 @@ ul.row {
     display: block; /* Render as a block element */
 }
 
-.social-link svg {
+.social-link > svg {
     fill: var(--text-color); /* Fill the color of svg children with the text-color variable */
 }
