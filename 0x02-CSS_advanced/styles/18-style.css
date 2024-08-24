@@ -80,7 +80,8 @@ body {
 
 .nav .nav-link {
     display: block;
-    padding: calc(0.5rem * 1rem) 1rem; /* Padding: half of root element for top/bottom, full root element for left/right */
+    padding: 0.5rem 1rem;
+    /* padding: calc(0.5rem * 1rem) 1rem; Padding: half of root element for top/bottom, full root element for left/right */
 }
 
 .nav .nav-link:hover {
