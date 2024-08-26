@@ -334,52 +334,59 @@ ul.row {
 }
 
 .card-work .card-outer {
-    position: relative;
-    overflow: hidden;
+    position: relative; /* Relatively position the element */
+    overflow: hidden;   /* Hide any overflow */
 }
 
+/* Add styles for the image inside card-image inside card-work */
 .card-work .card-image img {
-    height: 30rem;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
+    height: 30rem;          /* Set height of image to 30rem */
+    width: 100%;            /* Set width to 100% */
+    object-fit: cover;      /* Ensure the image covers the entire container */
+    vertical-align: bottom; /* Align the image vertically to the bottom */
 }
 
+/* Add styles for card-inner inside card-work */
 .card-work .card-inner {
-    position: absolute;
-    top: -0.1rem;
-    left: -0.1rem;
-    right: -0.1rem;
-    z-index: 1;
+    position: absolute; /* Absolutely position the element */
+    top: -0.1rem;       /* Position vertically with -0.1rem on the top */
+    left: -0.1rem;      /* Position horizontally with -0.1rem on the left */
+    right: -0.1rem;     /* Position horizontally with -0.1rem on the right */
+    z-index: 1;         /* Set z-index to 1 */
 }
 
+/* Add hover effect on card-inner when card-work is hovered */
 .card-work:hover .card-inner {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Change the background color on hover */
 }
 
+/* Add styles for card-title inside card-work */
 .card-work .card-title {
-    text-align: center;
-    margin: 0;
-    opacity: 0;
-    height: 100%;
-    position: relative;
+    text-align: center;   /* Center align the text */
+    margin: 0;            /* Margins all around should be 0 */
+    opacity: 0;           /* Set opacity to its lowest value */
+    height: 100%;         /* Set the height of the element to 100% */
+    position: relative;   /* Set the position to relative */
 }
 
+/* Add styles for the link inside card-title and card-work */
 .card-work .card-title a {
-    display: block;
-    text-decoration: none;
-    padding: 45%;
+    display: block;          /* Ensure elements display as blocks */
+    text-decoration: none;   /* Text should not be decorated */
+    padding-top: 45%;        /* Padding on the top set to 45% */
 }
 
+/* Create the after pseudo-elements of the link inside card-title and card-work */
 .card-work .card-title a::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: "";
+    content: '';              /* Content property with empty value */
+    position: absolute;       /* Absolutely position the selected elements */
+    top: 0;                   /* Set the top position to 0 */
+    right: 0;                 /* Set the right position to 0 */
+    bottom: 0;                /* Set the bottom position to 0 */
+    left: 0;                  /* Set the left position to 0 */
 }
 
+/* Add styles for card-title when card-work is hovered */
 .card-work:hover .card-title {
-    opacity: 1;
+    opacity: 1; /* Set opacity to 1 on hover */
 }
