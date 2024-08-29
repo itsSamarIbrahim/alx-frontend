@@ -177,7 +177,7 @@
     white-space: nowrap;
   }
 
-  .main img {
+  main img {
     width: 100%; /* Make images scale with the container */
     height: auto; /* Maintain the aspect ratio of images */
   }
